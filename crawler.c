@@ -269,3 +269,23 @@ int main(int argc, char *argv[])
  * This command currently builds it with gcc but I'm not sure if it's the right command: gcc -std=c11 -pedantic -pthread crawler.c -o crawler -lgumbo -lcurl,
  * using the one giving by Dezanghi doesn't work for us
  */
+
+// reads web pages and reads their content
+// suses multiple threads to fetch URL concurrently
+// uses libcurl library to send the HTTP requests and Gumbo library to parse the HTML content
+// Dezanghi already gave us some code so i started based off of it
+// URLQueueNode is a node in a linked list. Each node represents a URL to be fetched.
+// It has the URL, the depth at which this URL was found, and a pointer to the next node.
+// URLQueue: thread-safe queue of the URLS to be fetched. It has a head and tail pointer to the linked list and a lock for synchronization
+// FetchArgs: arguments to be passed to the fetch_url function. It has a pointer to the URLQueue and the max depth to be fetched
+// initQueue: initializes the URLQueue, head and tail to null
+// enqueue: adds a URL to the queue. It creates a new node and adds it to the tail of the queue. the lock ensures that only one thread can
+//          access the queue at a time
+// dequeue: removes a URL from the queue. It removes the head of the queue and returns the URL. the lock ensures that only one thread can
+//          access the queue at a time
+// write_data: callback function to be called by libcurl. called when libcurl receives data from the server, appends data to a string
+// search_for_links: recursively searches for links in the HTML content. It uses the Gumbo library to parse the HTML content and adds
+// the links to the queue
+// fetch_url: fetches and processes the URLs. It uses libcurl to send HTTP requests and Gumbo to parse the HTML content. It fetches the URLs
+//           from the queue, marks them as visited, fetches the content, parses the content, and adds the other links to the queue
+// main: initializes the URLQueue, adds the starting URL to the queue, and creates multiple threads

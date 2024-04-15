@@ -247,9 +247,15 @@ int main(int argc, char *argv[])
         pthread_join(threads[i], NULL);
     }
 
-    // WRITTEN BY DEZANGHI
-    // Cleanup and program termination.
-    // You may need to add additional cleanup logic here.
+    // Cleanup
+    URLQueueNode *current = queue.head;
+    while (current)
+    {
+        URLQueueNode *next = current->next;
+        free(current->url);
+        free(current);
+        current = next;
+    }
 
     return 0;
 }

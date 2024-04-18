@@ -9,6 +9,13 @@
 #include <gumbo.h>
 #include <curl/easy.h>
 
+//function prototypes
+void handle_parsing_error(GumboOutput *output, const char *url);
+void handle_network_error(CURLcode res, const char *url);
+void handle_memory_allocation_error(const char *msg);
+void handle_failure(const char *msg);
+int validate_url(const char *url);
+
 // structure for queue elements.
 typedef struct URLQueueNode
 {

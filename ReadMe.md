@@ -45,6 +45,8 @@ To run the web crawler, execute the following command: "./crawler <starting-url>
 
 Replace `<starting-url>` with the URL from which you want to start crawling and `<max-depth>` with the maximum depth to crawl.
 
+or run "make run" in your terminal. This has a default starting-url and max-depth which you can replace in the Makefile.
+
 ## Error Handling
 The web crawler includes error handling for various scenarios:
 - Invalid or dead URLs: URLs are validated before fetching, and dead URLs are skipped.

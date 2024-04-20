@@ -9,6 +9,13 @@
 #include <gumbo.h>
 #include <curl/easy.h>
 
+// function prototypes
+void handle_parsing_error(GumboOutput *output, const char *url);
+void handle_network_error(CURLcode res, const char *url);
+void handle_memory_allocation_error(const char *msg);
+void handle_failure(const char *msg);
+int validate_url(const char *url);
+
 // structure for queue elements.
 typedef struct URLQueueNode
 {
@@ -124,7 +131,8 @@ void search_for_links(GumboNode *node, URLQueue *queue, int depth, int max_depth
 char **visited;
 int visited_count = 0;
 // fetches and processes the URLS. error handling included
-void *fetch_url(void *arg) {
+void *fetch_url(void *arg)
+{
     FetchArgs *fetchArgs = (FetchArgs *)arg;
     URLQueue *queue = fetchArgs->queue;
     int max_depth = fetchArgs->max_depth;
@@ -132,41 +140,49 @@ void *fetch_url(void *arg) {
     CURL *curl = curl_easy_init();
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 
-    while (1) {
+    while (1)
+    {
         int depth;
         char *url = dequeue(queue, &depth);
-        if (url == NULL) {
+        if (url == NULL)
+        {
             break;
         }
 
-        if (!validate_url(url)) {
+        if (!validate_url(url))
+        {
             fprintf(stderr, "Invalid or dead URL: %s\n", url);
             free(url);
             continue;
         }
 
         char *response = malloc(1);
-        if (response == NULL) {
+        if (response == NULL)
+        {
             handle_memory_allocation_error("Failed to allocate memory for response buffer");
             free(url);
             continue;
         }
 
         int visited_already = 0;
-        for (int i = 0; i < visited_count; i++) {
-            if (strcmp(visited[i], url) == 0) {
+        for (int i = 0; i < visited_count; i++)
+        {
+            if (strcmp(visited[i], url) == 0)
+            {
                 visited_already = 1;
                 break;
             }
         }
 
-        if (visited_already) {
+        if (visited_already)
+        {
             free(url);
             continue;
         }
 
         visited = realloc(visited, (visited_count + 1) * sizeof(char *));
-        if (visited == NULL) {
+        if (visited == NULL)
+        {
             handle_memory_allocation_error("Failed to reallocate memory for visited URLs");
             free(url);
             free(response);
@@ -180,7 +196,8 @@ void *fetch_url(void *arg) {
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
         CURLcode res = curl_easy_perform(curl);
-        if (res != CURLE_OK) {
+        if (res != CURLE_OK)
+        {
             handle_network_error(res, url);
             free(url);
             free(response);
@@ -188,14 +205,16 @@ void *fetch_url(void *arg) {
         }
 
         GumboOutput *output = gumbo_parse(response);
-        if (output == NULL) {
+        if (output == NULL)
+        {
             handle_parsing_error(output, url);
             free(url);
             free(response);
             continue;
         }
 
-        if (depth < max_depth) {
+        if (depth < max_depth)
+        {
             search_for_links(output->root, queue, depth, max_depth);
         }
         gumbo_destroy_output(&kGumboDefaultOptions, output);
@@ -228,8 +247,7 @@ int main(int argc, char *argv[])
     fetchArgs.queue = &queue;
     fetchArgs.max_depth = max_depth;
 
-    // WRITTEN BY DEZANGHI
-    //  Placeholder for creating and joining threads.
+    //  creating and joining threads.
     //  You will need to create multiple threads and distribute the work of URL fetching among them.
     const int NUM_THREADS = 4; // Example thread count, adjust as needed.
     pthread_t threads[NUM_THREADS];
@@ -258,11 +276,13 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-//ERROR HANDLING
-//To check URLs
-int validate_url(const char *url) { 
+// ERROR HANDLING
+// To check URLs
+int validate_url(const char *url)
+{
     CURL *curl = curl_easy_init();
-    if (curl) {
+    if (curl)
+    {
         curl_easy_setopt(curl, CURLOPT_URL, url);
         curl_easy_setopt(curl, CURLOPT_NOBODY, 1L); // Only check headers, not the body
         CURLcode res = curl_easy_perform(curl);
@@ -272,24 +292,28 @@ int validate_url(const char *url) {
     return 0;
 }
 
-//For Network errors
-void handle_network_error(CURLcode res, const char *url) {
+// For Network errors
+void handle_network_error(CURLcode res, const char *url)
+{
     fprintf(stderr, "Failed to fetch URL '%s': %s\n", url, curl_easy_strerror(res));
 }
 
-//For Parsing Errors
-void handle_parsing_error(GumboOutput *output, const char *url) {
+// For Parsing Errors
+void handle_parsing_error(GumboOutput *output, const char *url)
+{
     fprintf(stderr, "Failed to parse HTML content from URL '%s'\n", url);
     gumbo_destroy_output(&kGumboDefaultOptions, output);
 }
 
-//Memory Allocation
-void handle_memory_allocation_error(const char *msg) {
+// Memory Allocation
+void handle_memory_allocation_error(const char *msg)
+{
     fprintf(stderr, "Memory allocation error: %s\n", msg);
 }
 
-//Other failures
-void handle_failure(const char *msg) {
+// Other failures
+void handle_failure(const char *msg)
+{
     fprintf(stderr, "Operation failed: %s\n", msg);
 }
 

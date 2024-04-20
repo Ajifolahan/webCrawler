@@ -7,14 +7,9 @@
 #include <unistd.h>
 #include <curl/curl.h>
 #include <gumbo.h>
-#include <curl/easy.h>
+#include "logger.h"
+#include <time.h>
 
-// function prototypes
-void handle_parsing_error(GumboOutput *output, const char *url);
-void handle_network_error(CURLcode res, const char *url);
-void handle_memory_allocation_error(const char *msg);
-void handle_failure(const char *msg);
-int validate_url(const char *url);
 //Logging Tags: info is just information, warning will flag the current process, error will end current process
 const char* INFO = "INFO", *WARNING = "WARNING", *ERROR = "ERROR";
 
@@ -46,7 +41,6 @@ void logger(const char* tag, const char* message) {
    }
    
 }
-
 // structure for queue elements.
 typedef struct URLQueueNode
 {
@@ -77,7 +71,7 @@ void initQueue(URLQueue *queue)
 }
 
 // Adds a URL to the thread-safe queue. Handles depth as well. mutex locks are used here for synchronization
-void enqueue(URLQueue *queue, const char *url, int depth)
+int enqueue(URLQueue *queue, const char *url, int depth)
 {
     URLQueueNode *newNode = malloc(sizeof(URLQueueNode));
     newNode->url = strdup(url);
@@ -95,6 +89,7 @@ void enqueue(URLQueue *queue, const char *url, int depth)
     }
     queue->tail = newNode;
     pthread_mutex_unlock(&queue->lock);
+    return 1;
 }
 
 // removes a URL from the thread-safe queue. Handles depth as well. mutex locks are used here for synchronixation
@@ -104,7 +99,7 @@ char *dequeue(URLQueue *queue, int *depth)
     if (queue->head == NULL)
     {
         pthread_mutex_unlock(&queue->lock);
-        logger(WARNING, "Empty queue / Buffer-underflow");
+        logger(WARNING, "Empty queue | Buffer-underflow");
         return NULL;
     }
 
@@ -124,20 +119,51 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
 {
     size_t total_size = size * nmemb;
     char **response_ptr = (char **)stream;
+
+    if (!response_ptr) //Check for NULL pointer
+    {
+        logger(ERROR, "NULL pointer passed as stream.");
+        return 0;
+    }
+
     char *temp = realloc(*response_ptr, strlen(*response_ptr) + total_size + 1);
     if (temp == NULL)
     {
         fprintf(stderr, "realloc() failed\n");
         return 0;
     }
+
     *response_ptr = temp;
-    strncat(*response_ptr, (char *)ptr, total_size);
+
+    if (!ptr)
+    {
+        logger(ERROR, "NULL pointer passed as data.");
+        return 0;
+    }
+
+    if(strncat(*response_ptr, (char *)ptr, total_size) == NULL) // strncat error handling
+    {
+        logger(ERROR, "strncat() failure.");
+        return 0;
+    }
+
     return total_size;
 }
 
 // recursively search for links in the HTML content AND add them to the queue. uses the Gumbo library
 void search_for_links(GumboNode *node, URLQueue *queue, int depth, int max_depth)
 {
+    if (!node)
+    {
+        logger(ERROR, "NULL node pointer passed.");
+        return;
+    }
+    else if (!queue)
+    {
+        logger(ERROR, "NULL Queue pointer passed.");
+        return;
+    }
+
     if (node->type != GUMBO_NODE_ELEMENT)
     {
         logging(WARNING, "Non-element node.");
@@ -150,8 +176,21 @@ void search_for_links(GumboNode *node, URLQueue *queue, int depth, int max_depth
     {
         if (depth < max_depth)
         {
-            enqueue(queue, href->value, depth + 1);
+            if(!enqueue(queue, href->value, depth + 1)) //Enqueue returns 1 if successful
+            {
+                logger(ERROR,"Failed to enqueue URL"); 
+                return;
+            }  
         }
+        else
+        {
+            logger(WARNING, "Max depth reached");
+        }
+    }
+    else
+    {
+        logger(WARNING,"Failed to find href attribute");
+        return;
     }
 
     GumboVector *children = &node->v.element.children;
@@ -163,15 +202,30 @@ void search_for_links(GumboNode *node, URLQueue *queue, int depth, int max_depth
 
 char **visited;
 int visited_count = 0;
-// fetches and processes the URLS. error handling included
+// fetches and processes the URLS. handles some errors like network and memory allocation errors
 void *fetch_url(void *arg)
 {
     FetchArgs *fetchArgs = (FetchArgs *)arg;
     URLQueue *queue = fetchArgs->queue;
     int max_depth = fetchArgs->max_depth;
 
+    // currently uses libcurl to send HTTP requests and Gumbo to parse HTML content
     CURL *curl = curl_easy_init();
+    if(!curl) // Check initialization of libcurl
+    {
+        logger(ERROR, "[Fetch_URL] Failed to intialize Libcurl.");
+        return;
+    }
+    else
+    {
+        logger(INFO, "[Fetch_URL] Libcurl easy handle initialized.");
+    }
+    
+
+    // libcurl's redirect handling. For redirecting the URLs
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+    logger(INFO, "[Fetch_URL] Libcurl configuration: EASY.");
+
 
     while (1)
     {
@@ -181,23 +235,16 @@ void *fetch_url(void *arg)
         {
             break;
         }
-
-        if (!validate_url(url))
-        {
-            fprintf(stderr, "Invalid or dead URL: %s\n", url);
-            free(url);
-            continue;
-        }
-
         char *response = malloc(1);
         if (response == NULL)
         {
-            handle_memory_allocation_error("Failed to allocate memory for response buffer");
+            logger(ERROR, "[Fetch_URL] Response memory allocation failure.");
             free(url);
             continue;
         }
 
         int visited_already = 0;
+        // Check if the URL has been visited.
         for (int i = 0; i < visited_count; i++)
         {
             if (strcmp(visited[i], url) == 0)
@@ -214,14 +261,8 @@ void *fetch_url(void *arg)
             continue;
         }
 
+        // Mark the URL as visited.
         visited = realloc(visited, (visited_count + 1) * sizeof(char *));
-        if (visited == NULL)
-        {
-            handle_memory_allocation_error("Failed to reallocate memory for visited URLs");
-            free(url);
-            free(response);
-            continue;
-        }
         visited[visited_count++] = strdup(url);
         printf("Fetching URL: %s\n", url);
 
@@ -230,20 +271,21 @@ void *fetch_url(void *arg)
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
         CURLcode res = curl_easy_perform(curl);
+        // error handling
         if (res != CURLE_OK)
         {
-            handle_network_error(res, url);
+            printf("Operation unsuccessful: %s\n", curl_easy_strerror(res));
             free(url);
             free(response);
             continue;
         }
 
         GumboOutput *output = gumbo_parse(response);
+        // error handling
         if (output == NULL)
         {
-            handle_parsing_error(output, url);
+            logger(WARNING, "[Fetch URL] gumbo_parse() failure");
             free(url);
-            free(response);
             continue;
         }
 
@@ -266,6 +308,7 @@ void *fetch_url(void *arg)
 // Main function to drive the web crawler. multithreading is done here as we are creating worker_threads and assigning the threads to the fetch_url function
 int main(int argc, char *argv[])
 {
+
     if (argc < 3)
     {
         printf("Usage: %s <starting-url> <max-depth>\n", argv[0]);
@@ -278,29 +321,30 @@ int main(int argc, char *argv[])
 
     enqueue(&queue, argv[1], 0);
     logger(INFO, "Launch URL Enqueued");
-
     int max_depth = atoi(argv[2]);
 
     FetchArgs fetchArgs;
     fetchArgs.queue = &queue;
     fetchArgs.max_depth = max_depth;
 
-    //  creating and joining threads.
+    // WRITTEN BY DEZANGHI
+    //  Placeholder for creating and joining threads.
     //  You will need to create multiple threads and distribute the work of URL fetching among them.
     const int NUM_THREADS = 4; // Example thread count, adjust as needed.
     pthread_t threads[NUM_THREADS];
 
+
     for (int i = 0; i < NUM_THREADS; i++)
     {
         pthread_create(&threads[i], NULL, fetch_url, (void *)&fetchArgs);
-        printf("Thread %d created\n", i);
+        printf("Thread %d created.", i);
     }
 
     // Joins threads after completion. Once the thread is done with its task, it returns and can be joined back to the main thread
     for (int i = 0; i < NUM_THREADS; i++)
     {
         pthread_join(threads[i], NULL);
-        printf("Thread %d joined\n", i);
+        printf("Thread %d joined.", i);
     }
 
     // Cleanup

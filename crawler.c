@@ -15,23 +15,20 @@ void handle_network_error(CURLcode res, const char *url);
 void handle_memory_allocation_error(const char *msg);
 void handle_failure(const char *msg);
 int validate_url(const char *url);
-//Logging Tags: info is just information, warning will flag the current process, error will end current process
-const char* INFO = "INFO", *WARNING = "WARNING", *ERROR = "ERROR";
+// Logging Tags: info is just information, warning will flag the current process, error will end current process
+const char *INFO = "INFO", *WARNING = "WARNING", *ERROR = "ERROR";
 
-//Logger function to track process info and errors
-void logger(const char* tag, const char* message) {
-   time_t now;  //Time info for logging
-   time(&now);
-   if(strcmp(tag,INFO) == 0)
-   {
-        printf("%s [%s]: %s\n", ctime(&now), tag, message); // Logging format for terminal & file
-   }
+// Logger function to track process info and errors
+void logger(const char *tag, const char *message)
+{
+    time_t now; // Time info for logging
+    time(&now);
 
-   else if(strcmp(tag,WARNING) == 0 || strcmp(tag,ERROR) == 0)
-   {
-        FILE* fpointer = fopen("errorLogs.txt", "a");
 
-        if(fpointer == NULL)  // Error check for opening error file
+   
+        FILE *fpointer = fopen("errorLogs.txt", "a");
+
+        if (fpointer == NULL) // Error check for opening error file
         {
             printf("LOGGING ERROR: Can not open logging file.");
             return;
@@ -39,12 +36,7 @@ void logger(const char* tag, const char* message) {
 
         fprintf(fpointer, "%s [%s]: %s\n", ctime(&now), tag, message);
         fclose(fpointer);
-        if(strcmp(tag,WARNING) == 0)
-        {
-            printf("%s [%s]: %s\n", ctime(&now), tag, message);
-        }
-   }
-   
+    
 }
 
 // structure for queue elements.
@@ -140,7 +132,7 @@ void search_for_links(GumboNode *node, URLQueue *queue, int depth, int max_depth
 {
     if (node->type != GUMBO_NODE_ELEMENT)
     {
-        logging(WARNING, "Non-element node.");
+        logger(WARNING, "Non-element node.");
         return;
     }
 
@@ -293,14 +285,12 @@ int main(int argc, char *argv[])
     for (int i = 0; i < NUM_THREADS; i++)
     {
         pthread_create(&threads[i], NULL, fetch_url, (void *)&fetchArgs);
-        printf("Thread %d created\n", i);
     }
 
     // Joins threads after completion. Once the thread is done with its task, it returns and can be joined back to the main thread
     for (int i = 0; i < NUM_THREADS; i++)
     {
         pthread_join(threads[i], NULL);
-        printf("Thread %d joined\n", i);
     }
 
     // Cleanup

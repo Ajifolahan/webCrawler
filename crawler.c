@@ -7,7 +7,12 @@
 #include <unistd.h>
 #include <curl/curl.h>
 #include <gumbo.h>
+#include <ctype.h>
 #include <curl/easy.h>
+
+#define URL_VALID 1
+#define URL_INVALID 0
+#define URL_CONNECTION_FAIL -1
 
 // function prototypes
 void handle_parsing_error(GumboOutput *output, const char *url);
@@ -174,12 +179,19 @@ void *fetch_url(void *arg)
             break;
         }
 
-        if (!validate_url(url))
-        {
-            fprintf(stderr, "Invalid or dead URL: %s\n", url);
-            free(url);
-            continue;
-        }
+    int url_status = validate_url(url);
+    if (url_status == URL_INVALID)
+    {
+        fprintf(stderr, "Invalid or dead URL: %s\n", url);
+        free(url);
+        continue;
+    }
+    else if (url_status == URL_CONNECTION_FAIL)
+    {
+        fprintf(stderr, "Failed to connect. Please check your internet connection.\n");
+        free(url);
+        continue;
+    }
 
         char *response = malloc(1);
         if (response == NULL)
@@ -222,12 +234,12 @@ void *fetch_url(void *arg)
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
         CURLcode res = curl_easy_perform(curl);
-        if (res != CURLE_OK)
-        {
-            handle_network_error(res, url);
-            free(url);
-            free(response);
-            continue;
+        if (res != CURLE_OK){
+                handle_network_error(res, url);
+                free(url);
+                free(response);
+                continue;
+         
         }
 
         GumboOutput *output = gumbo_parse(response);
@@ -273,12 +285,17 @@ int main(int argc, char *argv[])
 
     int max_depth = atoi(argv[2]);
 
+    if (max_depth < 1 || isalpha(max_depth))
+    {
+        puts("Invalid max depth. Please enter a number greater than 0.");
+        return 1;
+    }
+
     FetchArgs fetchArgs;
     fetchArgs.queue = &queue;
     fetchArgs.max_depth = max_depth;
 
-    //  creating and joining threads.
-    //  You will need to create multiple threads and distribute the work of URL fetching among them.
+    //  creating and joining threads and distributing the work of URL fetching among them.
     const int NUM_THREADS = 4; // Example thread count, adjust as needed.
     pthread_t threads[NUM_THREADS];
 
@@ -317,9 +334,12 @@ int validate_url(const char *url)
         curl_easy_setopt(curl, CURLOPT_NOBODY, 1L); // Only check headers, not the body
         CURLcode res = curl_easy_perform(curl);
         curl_easy_cleanup(curl);
-        return (res == CURLE_OK) ? 1 : 0;
+        if(res == CURLE_COULDNT_CONNECT) {
+            return URL_CONNECTION_FAIL;
+        }
+        return (res == CURLE_OK) ? URL_VALID : URL_INVALID;
     }
-    return 0;
+    return URL_INVALID;
 }
 
 // For Network errors

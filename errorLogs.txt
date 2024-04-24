@@ -1,724 +1,718 @@
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [INFO]: URL Queue Initialized
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [INFO]: Launch URL Enqueued
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Empty queue / Buffer-underflow
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [INFO]: Curl cleaning
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Empty queue / Buffer-underflow
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [INFO]: Curl cleaning
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Empty queue / Buffer-underflow
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [INFO]: Curl cleaning
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:01 2024
+Wed Apr 24 14:43:06 2024
  [WARNING]: Non-element node.
-Tue Apr 23 18:02:10 2024
- [WARNING]: [Fetch_URL] Visited URL encountered.
-Tue Apr 23 18:02:10 2024
- [WARNING]: Empty queue / Buffer-underflow
-Tue Apr 23 18:02:10 2024
- [INFO]: Curl cleaning

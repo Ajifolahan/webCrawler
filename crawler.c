@@ -94,6 +94,7 @@ void enqueue(URLQueue *queue, const char *url, int depth)
     } // if the queue is empty, the new node = head
     queue->tail = newNode;
     pthread_mutex_unlock(&queue->lock);
+    // printf("Current Depth: %d\n", depth);
 }
 
 // removes a URL from the head of the thread-safe queue. Handles depth as well. mutex locks are used here for synchronixation
@@ -175,6 +176,13 @@ void *fetch_url(void *arg)
     FetchArgs *fetchArgs = (FetchArgs *)arg; // pointer to the FetchArgs structure, contains the URLQueue and max depth
     URLQueue *queue = fetchArgs->queue;      // pointer to the URLQueue
     int max_depth = fetchArgs->max_depth;
+    
+    // // Print all elements in the queue
+    // URLQueueNode *current = queue->head;
+    // while (current != NULL) {
+    //     printf("URL: %s, Depth: %d\n", current->url, current->depth);
+    //     current = current->next;
+    // }
 
     CURL *curl = curl_easy_init();                      // initializing libcurl
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L); // option to follow redirects
@@ -183,6 +191,7 @@ void *fetch_url(void *arg)
     { // loop to fetch URLs from the queue
         int depth;
         char *url = dequeue(queue, &depth); // getting the URL from the queue
+        
         if (url == NULL)
         {
             break;
@@ -242,6 +251,7 @@ void *fetch_url(void *arg)
         // add the URL to the visited URLs
         visited[visited_count++] = strdup(url);
         printf("Fetching URL: %s\n", url);
+        // printf("Depth link was found: %d\n", depth);
 
         *response = '\0';
         // handles the URL to fetch
@@ -356,10 +366,16 @@ int validate_url(const char *url)
         curl_easy_setopt(curl, CURLOPT_NOBODY, 1L); // Only check headers, not the body
         CURLcode res = curl_easy_perform(curl);     // sending the HTTP request
         curl_easy_cleanup(curl);
+
         if (res == CURLE_COULDNT_CONNECT)
         {
             return url_connectionfail;
         } // handling connection issues
+        else if (res == CURLE_OPERATION_TIMEDOUT)
+        {
+            fprintf(stderr, "Network interruption during curl operation: %s\n", url);
+            exit(1);
+        }
         return (res == CURLE_OK) ? url_valid : url_invalid;
     }
     return url_invalid;
